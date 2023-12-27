@@ -1,20 +1,89 @@
-// .event {
-//   border: 1px solid #ddd;
-//   padding: 10px;
-//   margin-bottom: 10px;
-//   border-radius: 8px;
+.event {
+    margin-bottom: 10px;
+}
 
-//   display: flex;
-// }
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
 
-// .buttonName {
-//   background-color: #3498db;
-//   color: #fff;
-//   padding: 5px 10px;
-//   border: none;
-//   border-radius: 4px;
-//   cursor: pointer;
-//   font-size: 16px;
-//   margin-bottom: 8px;
-// }
-// ]]+[+]
+
+.buttonName {
+    background-color: #fd5656;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 8px;
+    min-width: 150px;
+
+}
+
+.buttonDate {
+    margin-left: 10px;
+}
+
+.buttonCost {
+    display: flex;
+    color: #27ae60;
+}
+
+.buttonBonus {
+    margin-right: 10px;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bonusText {
+    margin-left: 10px;
+    color: gray;
+}
+
+.buttonRating {
+    color: gray;
+}
+
+.eventCost {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.eventRating {
+    display: inline-flex;
+    align-items: center;
+}
+
+.rating {
+    margin-left: 8px;
+}
+
+.buttonIndex {
+    display: flex;
+}
+
+.index {
+    margin-right: 19px;
+    color: gray;
+}
+
+.buttonReview {
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #2ecc71;
+    color: gray;
+
+    &:hover {
+        background-color: #2ecc71;
+        color: #fff;
+    }
+}

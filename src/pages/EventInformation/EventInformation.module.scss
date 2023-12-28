@@ -1,0 +1,114 @@
+.infromationContainer {
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+
+}
+
+.bookmakerInformation {
+    display: flex;
+    margin-top: -10px;
+}
+
+.bookmakerColor {
+    color: #4caf50;
+}
+
+.emailInformation {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.email {
+    margin-left: 5px;
+}
+
+.emailColor {
+    color: #4caf50;
+}
+
+.licenceInformation {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.licenceColor {
+    color: #4caf50;
+    margin-left: 5px;
+
+}
+
+.depositColor {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.deposit {
+    margin-left: 5px;
+}
+
+.plusesInformation {
+    margin-top: 45px;
+}
+
+.minusesInformation {
+    margin-top: 35px;
+}
+
+.minuses {
+    margin-left: 10px;
+}
+
+.h2 {
+    display: flex;
+    align-items: center;
+}
+
+.pluses {
+    margin-left: 10px;
+}
+
+.buttonPlay {
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    color: #fff;
+    margin-left: 20px;
+
+    &:hover {
+        background-color: transparent;
+        color: gray;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.buttonBack {
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: grey;
+
+    &:hover {
+        background-color: #fd5656;
+        color: #fff;
+        border: 1px solid #fd5656;
+    }
+}

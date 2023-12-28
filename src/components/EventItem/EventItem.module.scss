@@ -21,6 +21,9 @@
     font-size: 16px;
     margin-bottom: 8px;
     min-width: 150px;
+    &:hover {
+        box-shadow: 3px 10px 19px -8px rgba(66, 68, 90, 1);
+    }
 }
 
 .buttonDate {
@@ -71,17 +74,34 @@
     color: gray;
 }
 
+.buttonPlay {
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    color: #fff;
+    margin-left: 20px;
+
+    &:hover {
+        background-color: transparent;
+        color: gray;
+    }
+}
+
 .buttonReview {
     padding: 12px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    border: 1px solid grey;
     background-color: transparent;
-    border: 1px solid #2ecc71;
-    color: gray;
-
+    color: grey;
     &:hover {
-        background-color: #2ecc71;
+        background-color: #fd5656;
         color: #fff;
+        border: 1px solid #fd5656;
     }
 }

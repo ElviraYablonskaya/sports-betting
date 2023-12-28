@@ -18,9 +18,13 @@ type EventItemProps = {
 const EventItem: FC<EventItemProps> = ({ event, index }) => {
   const navigate = useNavigate()
 
-  const handleReviewClick = () => {
+  const handlePlayClick = () => {
     navigate(`/events/${event.id}`);
   };
+
+  const handleReviewClick = () => {
+    navigate(`/bookmakers/${event.id}`);
+  }
 
   return (
     <div className={styles.event}>
@@ -35,10 +39,13 @@ const EventItem: FC<EventItemProps> = ({ event, index }) => {
             <span className={styles.rating}>{event.rating}</span></div>
         </span>
         <span className={styles.buttonCost}>
-          <span className={styles.buttonBonus}><FaGift color="red" />
+          <span className={styles.buttonBonus}><FaGift color="#fd5656" />
             <span className={styles.bonusText}>Бонус на первый депозит</span></span>
           <span className={styles.eventCost}>{event.cost}</span></span>
-        <button className={styles.buttonReview} onClick={handleReviewClick}>Обзор</button>
+        <div>
+          <button className={styles.buttonReview} onClick={handleReviewClick}>Обзор</button>
+          <button className={styles.buttonPlay} onClick={handlePlayClick}>Играть</button>
+        </div>
       </div>
     </div>
   );

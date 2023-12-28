@@ -36,7 +36,7 @@ const EventDetails = () => {
             setTimeout(() => {
                 setShowNotification(false);
                 navigate("/");
-            }, 3000);
+            }, 2000);
         }
     };
 

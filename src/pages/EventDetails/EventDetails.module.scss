@@ -1,0 +1,82 @@
+.eventDetailsContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.coefficientOptions {
+    margin-top: 25px;
+}
+
+.coefficientOptions label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score {
+    color: #27ae60;
+}
+
+.eventDetailsContainer {
+    position: relative;
+}
+
+.notification {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(105%);
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.placeBetButton {
+    border: 1px solid #4caf50;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 15px;
+}
+
+.disabledButton {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.date {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.dateText {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.venue {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.venueText {
+    color: #4caf50;
+    font-weight: bold;
+}

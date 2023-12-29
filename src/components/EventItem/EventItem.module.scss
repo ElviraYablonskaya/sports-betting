@@ -4,10 +4,12 @@
 
 .button {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     align-items: center;
     justify-content: space-between;
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
 }
 
@@ -21,18 +23,16 @@
     font-size: 16px;
     margin-bottom: 8px;
     min-width: 150px;
+
     &:hover {
         box-shadow: 3px 10px 19px -8px rgba(66, 68, 90, 1);
     }
 }
 
-.buttonDate {
-    margin-left: 10px;
-}
-
 .buttonCost {
     display: flex;
     color: #27ae60;
+    margin-top: 8px;
 }
 
 .buttonBonus {
@@ -99,9 +99,23 @@
     border: 1px solid grey;
     background-color: transparent;
     color: grey;
+
     &:hover {
         background-color: #fd5656;
         color: #fff;
         border: 1px solid #fd5656;
+    }
+}
+
+@media (min-width: 800px) {
+    .button {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .buttons {
+        margin-top: 20px;
     }
 }

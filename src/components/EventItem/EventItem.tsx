@@ -42,7 +42,7 @@ const EventItem: FC<EventItemProps> = ({ event, index }) => {
           <span className={styles.buttonBonus}><FaGift color="#fd5656" />
             <span className={styles.bonusText}>Бонус на первый депозит</span></span>
           <span className={styles.eventCost}>{event.cost}</span></span>
-        <div>
+        <div className={styles.buttons}>
           <button className={styles.buttonReview} onClick={handleReviewClick}>Обзор</button>
           <button className={styles.buttonPlay} onClick={handlePlayClick}>Играть</button>
         </div>

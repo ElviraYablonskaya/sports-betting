@@ -112,3 +112,10 @@
         border: 1px solid #fd5656;
     }
 }
+
+@media (max-width: 500px) {
+    .bookmakerInformation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

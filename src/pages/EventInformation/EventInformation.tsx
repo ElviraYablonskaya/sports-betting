@@ -76,7 +76,7 @@ const EventInformation = () => {
                 </ul>
             </div>
             <div className={styles.buttons}>
-                <button className={styles.buttonBack} onClick={handleHomeClick}>Выйти</button>
+                <button className={styles.buttonBack} onClick={handleHomeClick}>Вернуться в главное меню</button>
                 <button className={styles.buttonPlay} onClick={handlePlayClick}>Играть</button>
             </div>
         </div>

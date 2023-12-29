@@ -40,6 +40,10 @@ const EventDetails = () => {
         }
     };
 
+    const handleHomeClick = () => {
+        navigate("/");
+    }
+
     if (!eventDetails) {
         return <div>Loading...</div>;
     }
@@ -87,13 +91,16 @@ const EventDetails = () => {
                     Спасибо, ваша ставка на матч {`${eventDetails.team1} vs ${eventDetails.team2}, коэффициент "${currentCoefficient}"`} принята.
                 </div>
             )}
-            <button
-                onClick={handlePlaceBet}
-                disabled={!currentCoefficient}
-                className={`${styles.placeBetButton} ${!currentCoefficient ? styles.disabledButton : ""}`}
-            >
-                Сделать ставку
-            </button>
+            <div className={styles.buttons}>
+                <button className={styles.buttonBack} onClick={handleHomeClick} >Вернуться в главное меню</button>
+                <button
+                    onClick={handlePlaceBet}
+                    disabled={!currentCoefficient}
+                    className={`${styles.placeBetButton} ${!currentCoefficient ? styles.disabledButton : ""}`}
+                >
+                    Сделать ставку
+                </button>
+            </div>
         </div>
     );
 };

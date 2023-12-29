@@ -48,7 +48,7 @@
 .placeBetButton {
     border: 1px solid #4caf50;
     padding: 12px;
-    margin-top: 10px;
+    margin-left: 20px;
     border-radius: 8px;
     cursor: pointer;
     background-color: #4caf50;
@@ -79,4 +79,26 @@
 .venueText {
     color: #4caf50;
     font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+
+.buttonBack {
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: grey;
+
+    &:hover {
+        background-color: #fd5656;
+        color: #fff;
+        border: 1px solid #fd5656;
+    }
 }
